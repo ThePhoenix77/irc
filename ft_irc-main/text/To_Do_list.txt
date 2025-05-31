@@ -1,0 +1,15 @@
+for server : he needs to check if the command ends with "\r\n" or "\n"
+
+
+
+
+
+
+
+- in the PASS command:
+* check if it passed the Authentication level, if yes print a specifice message
+* if it did not pass the Authentication level and it did enter the password multiple time count the last one as the password
+
+
+
+no that i finished 

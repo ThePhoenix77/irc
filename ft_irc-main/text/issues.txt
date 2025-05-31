@@ -1,0 +1,12 @@
+join:
+
+if a channel has a password and the password is not provided
+if a channel does not start with a #
+
+
+
+in server add an attribute that will hold the hostname so you need to make a function that change the ip into a hostname
+
+
+
+

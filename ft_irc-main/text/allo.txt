@@ -1,0 +1,27 @@
+#>If you want to switch to you branche:
+
+git switch "your branche name" --> for example : git switch anas
+
+/////////////////////////////////////////////////////////////////////
+
+#>If you want to push in your branch:
+
+git add .
+git commit -m "your commit message"
+git push
+
+/////////////////////////////////////////////////////////////////////
+
+#>If you want to merge changes from your branch to the main branch:
+
+git switch main
+git merge anas or >git merge taha
+git push
+
+/////////////////////////////////////////////////////////////////////
+
+#>If you want to update your branch with the latest main changes:
+
+git switch anas  # or taha
+git merge main
+git push
