@@ -95,6 +95,8 @@ class Server{
 		void handleTopic(const std::string& input, Client& client);
 		//MODE command
 		void handleMode(const std::string& input, Client& client);
+		//INVITE command
+		void handleInvite(const std::string& input, Client& client);
 };
 
 bool sendReply(Client &client, const std::string &replyMessage);

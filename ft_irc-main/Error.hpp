@@ -37,6 +37,14 @@
 #define RPL_TOPIC(nick, channel, topic) (":" + std::string("server") + " 332 " + nick + " " + channel + " :" + topic + "\r\n")+ ENDING
 #define RPL_NOTOPIC(nick, channel) (":" + std::string("server") + " 331 " + nick + " " + channel + " :No topic is set\r\n")+ ENDING
 #define ERR_CHANNELISFULL(nickname, channel) PREFIX " 471 " + nickname + " " + channel + " :Cannot join channel (+l)" + ENDING
+
+//invite
+#define ERR_NOSUCHCHANNEL(channel) (":" + std::string("server") + " 403 " + channel + " :No such channel\r\n") + ENDING
+#define ERR_NOTREGISTERED2(command) (":" + std::string("server") + " 451 " + command + " :You have not registered\r\n") + ENDING
+
+#define RPL_INVITING(nickname, target, channel) PREFIX " 341 " + nickname + " " + target + " " + channel + ENDING
+#define ERR_CHANOPRIVSNEEDED(nickname, channel) PREFIX " 482 " + nickname + " " + channel + " :You're not channel operator" + ENDING
+
 //#define ERR_CHANOPRIVSNEEDED(nick, channel) (":" + std::string("server") + " 482 " + nick + " " + channel + " :You're not channel operator\r\n")+ ENDING
 
 #endif

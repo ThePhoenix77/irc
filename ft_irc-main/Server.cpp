@@ -229,6 +229,8 @@ void Server::parseCommand(const std::string &input, Client &client)
     	handleTopic(input, client);
 	else if (command == "MODE")
 		handleMode(input, client);
+	else if (command == "INVITE")
+		handleInvite(input, client);
 	else
 		sendReply(client, "UNKNOWN COMMAND\r\n");
 }
